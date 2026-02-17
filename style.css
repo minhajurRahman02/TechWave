@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+* {
+    font-family: "Inter";
+}
+
+:root {
+    --primary-color: #1A0B2E;
+    --secondary-color: #00FF88;
+    --gradient-color: linear-gradient(48deg, #F7E93F 16.53%, #FB09B4 49.82%, #9100F8 81.65%);
+    --text-color-white: #FFF;
+}
+
+.heading-font-1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--text-color-white);
+}
+
+.heading-font-2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--text-color-white);
+}
+
+.heading-font-3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-color-white);
+}
+
+.heading-font-4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color-white);
+}
+
+.regular-font-1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color-white);
+}
+
+.regular-font-2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.rating-font {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
