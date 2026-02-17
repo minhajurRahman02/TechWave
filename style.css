@@ -2,14 +2,29 @@
 
 * {
     font-family: "Inter";
+    transition: 0.5s ease;
 }
 
 :root {
     --primary-color: #1A0B2E;
-    --secondary-color: #00FF88;
-    --gradient-color: linear-gradient(48deg, #F7E93F 16.53%, #FB09B4 49.82%, #9100F8 81.65%);
+    --secondary-color-1: #00FF88;
+    --secondary-color-2: #9100F8;
     --text-color-white: #FFF;
+    --gradient-color: linear-gradient(48deg,
+            #F7E93F 16.53%,
+            #FB09B4 49.82%,
+            #9100F8 81.65%);
 }
+
+.gradient-text {
+    background: linear-gradient(48deg,
+            #F7E93F 16.53%,
+            #FB09B4 49.82%,
+            #9100F8 81.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .heading-font-1 {
     font-size: 60px;
@@ -51,4 +66,86 @@
     font-size: 48px;
     font-weight: 900;
     color: var(--secondary-color);
+}
+
+.primary-btn {
+    background: var(--gradient-color);
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.primary-btn:hover {
+    scale: 1.07;
+    cursor: pointer;
+}
+
+.nav-wrapper {
+    display: none;
+}
+
+
+/* navigation section */
+nav .heading-font-1 {
+    font-size: clamp(24px, 4vw, 60px);
+}
+
+nav ul li:hover {
+    scale: 1.07;
+}
+
+nav ul a:hover {
+    color: var(--secondary-color-2);
+}
+
+/* Responsive */
+/* medium device */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-wrapper {
+        display: block;
+    }
+
+    .nav-wrapper:hover {
+        cursor: pointer;
+    }
+}
+
+/* small device */
+
+@media screen and (max-width: 576px) {
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-wrapper {
+        display: block;
+    }
+
+    .nav-wrapper:hover {
+        cursor: pointer;
+    }
 }
