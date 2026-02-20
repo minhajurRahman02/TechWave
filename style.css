@@ -237,6 +237,13 @@ iframe {
     cursor: pointer;
 }
 
+/* footer section */
+footer {
+    background-image: url(assets/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
 /* Responsive */
 /* medium device */
 
