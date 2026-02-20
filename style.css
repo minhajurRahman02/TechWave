@@ -213,6 +213,30 @@ iframe {
     border-top-right-radius: 20px;
 }
 
+/* host section */
+.host-card {
+    background-color: var(--background-color-1);
+    border-radius: 20px;
+}
+
+.host-icon {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.host-icon img {
+    width: 20px;
+    height: auto;
+}
+
+.host-icon:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
 /* Responsive */
 /* medium device */
 
@@ -263,6 +287,19 @@ iframe {
         justify-items: center;
         align-items: center;
         gap: 20px;
+    }
+
+    .host-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .host-icon-container {
+        justify-content: center;
     }
 
 }
@@ -319,5 +356,21 @@ iframe {
         justify-items: center;
         align-items: center;
         gap: 20px;
+    }
+
+    .host-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .host-icon {
+        margin: 0;
+    }
+
+    .host-icon-container {
+        justify-content: center;
     }
 }
