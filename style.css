@@ -244,6 +244,8 @@ footer {
     background-size: cover;
 }
 
+
+
 /* Responsive */
 /* medium device */
 
@@ -307,6 +309,14 @@ footer {
 
     .host-icon-container {
         justify-content: center;
+    }
+
+    .sponsor-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
     }
 
 }
@@ -379,5 +389,13 @@ footer {
 
     .host-icon-container {
         justify-content: center;
+    }
+
+    .sponsor-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
     }
 }
